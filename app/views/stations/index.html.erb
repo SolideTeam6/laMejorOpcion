@@ -22,7 +22,7 @@
         <td><%= station.address %></td>
         <td><%= station.lat %></td>
         <td><%= station.long %></td>
-        <td><%= station.logo %></td>
+        <td><%= image_tag station.logo.thumb.url %></td>
         <td><%= station.active %></td>
         <td><%= link_to 'Show', station %></td>
         <td><%= link_to 'Edit', edit_station_path(station) %></td>

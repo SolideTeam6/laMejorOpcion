@@ -19,17 +19,23 @@
     <%= f.label :address %><br>
     <%= f.text_area :address %>
   </div>
-  <div class="field">
+  <div id="mapa">
+        <h2>Aquí irá el mapa!</h2>
+  </div>
+  <div class="field"  id="formulario">
     <%= f.label :lat %><br>
     <%= f.text_field :lat %>
-  </div>
-  <div class="field">
     <%= f.label :long %><br>
     <%= f.text_field :long %>
   </div>
   <div class="field">
-    <%= f.label :logo %><br>
-    <%= f.text_field :logo %>
+     <%= f.label :logo %><br>
+     <%= f.file_field :logo %>
+     <% if f.object.logo? %>
+       <%= image_tag f.object.logo.thumb.url %>
+       <%= f.label :remove_logo %>
+       <%= f.check_box :remove_logo %>
+     <% end %>
   </div>
   <div class="field">
     <%= f.label :active %><br>
