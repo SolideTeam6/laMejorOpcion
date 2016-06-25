@@ -1,4 +1,5 @@
 class StationsController < ApplicationController
+  layout 'admin'
   before_action :set_station, only: [:show, :edit, :update, :destroy]
 
   # GET /stations

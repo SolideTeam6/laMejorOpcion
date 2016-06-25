@@ -6,12 +6,41 @@
   <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyDdsHKHH3R5NpCzhrzLbQOpvTgtJOHmgpc"%>
   <%= javascript_include_tag "http://code.jquery.com/jquery-2.0.3.min.js"%>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'maps.js'%>
+  <%= javascript_include_tag 'mapa.js'%>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+    <header>
+    		<nav class="navbar navbar-inverse">
+    		  <div class="container-fluid">
+    		    <div class="navbar-header">
+    		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+    		        <span class="icon-bar"></span>
+    		        <span class="icon-bar"></span>
+    		        <span class="icon-bar"></span>
+    		      </button>
+    		      <a class="navbar-brand" href="#" id="webname">Gas App</a>
+    		    </div>
+    		    <div class="collapse navbar-collapse" id="myNavbar">
+    		      <ul class="nav navbar-nav">
+    		        <li class="active"><a href="#">Home</a></li>
+    		        <li><a href="#">Page 2</a></li>
+    		        <li><a href="#">Page 3</a></li>
+    		      </ul>
+    		      <ul class="nav navbar-nav navbar-right">
+    		        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    		        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    		      </ul>
+    		    </div>
+    		  </div>
+    		</nav>
+    	</header>
+        <%= yield %>
+        <footer class="container-fluid bg-4 text-center">
+	           <p>Made By <a href="http://www.solidemx.com">Solide</a></p>
+	    </footer>
 
 </body>
+<%= javascript_include_tag "bootstrap.min.js" %>
+<%= javascript_include_tag "npm.js" %>
 </html>

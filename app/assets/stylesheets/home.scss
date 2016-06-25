@@ -1,0 +1,85 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+html{
+	background-color: black;
+}
+body{
+	background-color: black;
+}
+#mapa{
+    width: 125%;
+    height:550px;
+    float:center;
+    background-color: black;
+}
+
+#encabezado{
+	background-color: black;
+	color:white;
+	text-align: center;
+
+}
+#gas{
+	height: 550px;
+	text-align: center;
+	background-color: #FF3030;
+	color:white;
+	overflow: scroll;
+}
+#info{
+	height: 550px;
+	text-align: center;
+	background-color: #6B6B6B;
+	color:white;
+	display: none;
+}
+#btnGas{
+
+	background-color: #FF4F4F;
+	border: 1px solid #9A0202;
+}
+#nomGas{
+	color: #BBBBBB;
+}
+#webname{
+	color:white;
+}
+.content{
+	margin-top: -20px;
+}
+footer{
+	height: 100px;
+	background-color: #101010;
+	color:white;
+}
+/*MEDIANOS*/
+@media (min-width: 768px) and (max-width: 991px) {
+    #gas{
+    	display:none;
+    }
+    #mapa{
+    	height:350px;
+    }
+    #info{
+    	height: 250px;
+    	display: block;
+    }
+
+    }
+    /*CELULAR*/
+    @media(max-width:767px){
+    #gas{
+    	display:none;
+    }
+    #mapa{
+    	height:250px;
+    }
+    #info{
+    	height: 250px;
+    	display: block;
+
+    }
+}

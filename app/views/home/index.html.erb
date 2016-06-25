@@ -1,0 +1,24 @@
+<div class="content">
+			<div class="row">
+				<div class="col-md-2" id="gas">
+						<h3>Gasolineras</h3>
+                        <input type="text" class="form-control" placeholder="Buscar..."></input><br>
+                        <% @stations.each do |station| %>
+                            <button type="button" class="btn btn-primary btn-lg btn-block" id="btnGas"><%= image_tag station.logo.thumb.url %><%= station.name %></button>
+                        <% end %>
+				</div>
+			<div class="col-md-8" >
+				<div id="mapa">
+		    		<h2>Mapa</h2>
+				</div>
+			</div>
+			<div class="col-md-2" id="info">
+				<h3>Información</h3>
+				<h4 id="nomGas">Rendichicas Lagos</h4><br>
+				<p> <b>Av. Vallarta s/n, Lagos, 31100 Chihuahua, Chih.</b></p>
+				<p><b>Teléfono:</b>01 614 417 2727</p>
+				<p><b>Horario:</b> 24 horas</p>
+				<p><b>Status:</b> Sí hay gasolina</p>
+			</div>
+		</div>
+	</div>
